@@ -1,9 +1,12 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
   <router-view/>
+  <nav>
+    <router-link to="/">Journal</router-link>
+    <router-link to="/contact">Contacts</router-link>
+    <router-link to="/clavier">Clavier</router-link>
+    <router-link to="/add">+</router-link>
+  </nav>
 </template>
 
 <style>
@@ -11,15 +14,30 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
   color: #2c3e50;
 }
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 nav {
-  padding: 30px;
+  height: 90px;
+  background-color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
 }
 
 nav a {
+  margin-top: 36px;
+  text-decoration: none;
   font-weight: bold;
   color: #2c3e50;
 }
